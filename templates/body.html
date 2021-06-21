@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block body %}
+{{ super() }}
+<br>
+<p>Your buy recommendation for {{ instrument }} is {{ recommend|round(2) * 100 }}%.</p>
+<img src='static/images/tmp/{{ image_name }}.png' alt="{{ instrument }} buy recommendation">
+{% endblock %}
+{% block title %}
+{{ super () }}{{ instrument }}
+{% endblock %}
