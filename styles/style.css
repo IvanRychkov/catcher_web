@@ -1,0 +1,93 @@
+/* @keyframes babki {
+    10% {
+      content: '$$$$$$$$$$$$$ Попробуй меня! $$$$$$$$$$$$$';
+    }
+
+    55% {
+      content: '$$$$$$$$$$$$$ бабки Попробуй меня! бабки $$$$$$$$$$$$$';
+    }
+
+    75% {
+      content: '$$$$$ бабки бабки бобосики Попробуй меня! бабки бабки денюжки $$$$$';
+    }
+
+    100% {
+        content: 'хочу $$$$$$$$$$$$$ Попробуй меня! $$$$$$$$$$$$$ хочу';
+      }
+  } */
+
+.root {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.menu {
+ display: flex;
+ flex-flow: column;
+ align-items: center;
+}
+
+.menu__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__link {
+  min-width: 40vh;
+  margin: 0 10px 0 10px;
+  padding: 0;
+  line-height: 1.5;
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-transition: font-size 0.7s ease-in-out;
+  -moz-transition: font-size 0.7s ease-in-out;
+  -ms-transition: font-size 0.7s ease-in-out;
+  -o-transition: font-size 0.7s ease-in-out;
+  transition: font-size 0.7s ease-in-out;
+}
+
+.menu__link:hover {
+  font-size: 34px;
+}
+
+.menu__title {
+  margin: 10px;
+  padding: 0;
+  line-height: 40px;
+  font-size: 40px;
+  color: darkseagreen;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+}
+
+.menu__title_arrow {
+  margin: 0 10px 0 10px;
+  padding: 0;
+  line-height: 40px;
+  font-size: 50px;
+  color: white;
+}
+
+.menu__title:hover .menu__title_arrow {
+  color: darkseagreen;
+  /* animation-name: babki;
+  animation-duration: 3s; */
+}
+
+.menu__icon {
+ max-height: 45px;
+ opacity: 0.6;
+ -webkit-transition: opacity 0.4s ease-in-out;
+ -moz-transition: opacity 0.4s ease-in-out;
+ -ms-transition: opacity 0.4s ease-in-out;
+ -o-transition: opacity 0.4s ease-in-out;
+ transition: opacity 0.4s ease-in-out;
+}
+
+.menu__icon:hover {
+ opacity: 1;
+}
